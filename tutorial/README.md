@@ -1,1 +1,1 @@
-### Defauly page for Tutorial
+### Default Page for Tutorial Folder
