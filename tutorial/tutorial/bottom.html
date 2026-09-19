@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial 5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+html, body {
+margin: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.container {
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.left {
+flex: 0 0 20%;
+background-color: #20B2AA;
+height: 100%;
+min-width: 0;
+overflow: hidden;
+}
+
+.right {
+flex: 1;
+height: 100%;
+min-width: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.left iframe {
+width: 100%;
+height: 100%;
+border: none;
+display: block;
+}
+
+.right iframe {
+width: 90%;
+height: 90%;
+border: none;
+display: block;
+}
+
+@media (max-width: 600px) {
+.container {
+flex-direction: column;
+}
+
+.left {
+flex: 0 0 25%;
+width: 100%;
+height: 25%;
+}
+
+.right {
+width: 100%;
+height: 75%;
+}
+
+.right iframe {
+width: 95%;
+height: 95%;
+}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="left">
+<iframe src="studentlist.html" name="lowerleft"></iframe>
+</div>
+
+<div class="right">
+<iframe src="tutorial5_ans.html" name="lowerright"></iframe>
+</div>
+
+</div>
+
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial 5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+html, body {
+margin: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+#blink {
+color: blue;
+font-size: clamp(18px, 3vw, 30px);
+font-weight: bold;
+font-family: sans-serif;
+text-align: center;
+margin: 0;
+padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<p id="blink">Tutorial 5</p>
+
+<script type="text/javascript">
+  var blink = document.getElementById('blink');
+
+  setInterval(function () {
+     blink.style.opacity =
+     (blink.style.opacity == 0 ? 1 : 0);
+   }, 700);
+
+  function checkStorage() {
+     const newText = localStorage.getItem('studentName');
+
+     if (newText) {
+        document.getElementById('blink').innerHTML = newText;
+        }
+     }
+
+     setInterval(checkStorage, 1000);
+
+</script>
+
+</body></html>
